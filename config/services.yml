@@ -1,0 +1,24 @@
+services:
+    david63.joineddate.listener:
+        class: david63\joineddate\event\listener
+        arguments:
+            - '@config'
+            - '@user'
+        tags:
+            - { name: event.listener }
+
+    david63.joineddate.admin.controller:
+        class: david63\joineddate\controller\admin_controller
+        arguments:
+            - '@config'
+            - '@request'
+            - '@template'
+            - '@user'
+            - '@log'
+            - '@language'
+            - '@david63.joineddate.core.functions'
+
+    david63.joineddate.core.functions:
+        class: david63\joineddate\core\functions
+        arguments:
+            - '@ext.manager'

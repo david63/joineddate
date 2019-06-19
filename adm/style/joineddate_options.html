@@ -1,0 +1,40 @@
+{% include '@' ~ NAMESPACE ~ '/head_panel.html' %}
+
+<form id="logsearches" method="post" action="{U_ACTION}">
+	<fieldset>
+		<legend>{{ lang('JOINED_DATE_OPTIONS') }}</legend>
+
+		<dl>
+			<dt><label for="joined_dateformat_viewtopic">{{ lang('VIEWTOPIC_FORMAT') }}{{ lang('COLON') }}</label><br><span>{{ lang('VIEWTOPIC_FORMAT_EXPLAIN') }}</span></dt>
+			<dd>
+				{{ FORMAT_VIEWTOPIC }}
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="joined_dateformat_memberlist">{{ lang('MEMBERLIST_FORMAT') }}{{ lang('COLON') }}</label><br><span>{{ lang('MEMBERLIST_FORMAT_EXPLAIN') }}</span></dt>
+			<dd>
+				{{ FORMAT_MEMBERLIST }}
+			</dd>
+		</dl>
+
+		<dl>
+			<dt><label for="joined_dateformat_profile">{{ lang('PROFILE_FORMAT') }}{{ lang('COLON') }}</label><br><span>{{ lang('PROFILE_FORMAT_EXPLAIN') }}</span></dt>
+			<dd>
+				{{ FORMAT_PROFILE }}
+			</dd>
+		</dl>
+
+	</fieldset>
+
+	<fieldset>
+		<legend>{{ lang('ACP_SUBMIT_CHANGES') }}</legend>
+		<p class="submit-buttons">
+			<input class="adm-button" type="submit" id="submit" name="submit" value="{{ lang('SUBMIT') }}" />&nbsp;
+			<input class="adm-button" type="reset" id="reset" name="reset" value="{{ lang('RESET') }}" />
+		</p>
+		{{ S_FORM_TOKEN }}
+	</fieldset>
+</form>
+
+{% include '@' ~ NAMESPACE ~ '/donate.html' %}

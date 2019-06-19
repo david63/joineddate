@@ -1,0 +1,42 @@
+{
+	"name": "david63/joineddate",
+	"type": "phpbb-extension",
+	"description": "An extension to change the joined date format displayed in viewtopic and memberlist/user profile.",
+	"version": "2.1.0",
+	"time": "2015-10-31",
+	"keywords": [
+		"phpbb",
+		"extension",
+		"joined",
+		"date",
+		"viewtopic",
+		"memberlist",
+		"profile"
+	],
+	"license": "GPL-2.0-only",
+	"authors": [{
+			"name": "David Wood",
+			"role": "Mod convertor"
+			},
+			{
+			"name": "Pungky",
+			"username": "idiotnesia",
+			"role": "Original Mod developer"
+		}],
+   "require": {
+        "php": ">=5.4,<7.1",
+		"phpbb/phpbb": ">=3.2.0-RC1",
+        "composer/installers": "~1.0"
+    },
+	"extra": {
+		"display-name": "[*] Joined date format",
+		"soft-require": {
+			"phpbb/phpbb": ">=3.2.0-RC1"
+      },
+		"version-check": {
+        	"host": "version.phpbbdev.space",
+        	"directory": "/3.2",
+        	"filename": "/joined_date_version_file.json"
+    	}
+	}
+}
