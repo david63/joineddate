@@ -15,14 +15,14 @@
 	],
 	"license": "GPL-2.0-only",
 	"authors": [{
-			"name": "David Wood",
-			"role": "Mod convertor"
-			},
-			{
-			"name": "Pungky",
-			"username": "idiotnesia",
-			"role": "Original Mod developer"
-		}],
+		"name": "David Wood",
+		"role": "Mod convertor"
+		},
+		{
+		"name": "Pungky",,
+		"role": "Original Mod developer"
+		}
+	],
    "require": {
         "php": ">=5.4,<7.1",
 		"phpbb/phpbb": ">=3.2.0-RC1",

@@ -9,8 +9,6 @@
 
 namespace david63\joineddate\controller;
 
-use Symfony\Component\DependencyInjection\ContainerInterface;
-
 use phpbb\config\config;
 use phpbb\request\request;
 use phpbb\template\template;
