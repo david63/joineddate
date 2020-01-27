@@ -178,7 +178,7 @@ class admin_controller implements admin_interface
 		}
 		$dateformat_options .= '>' . $this->language->lang('CUSTOM_DATEFORMAT') . '</option>';
 
-		return "<select name=\"dateoptions\" id=\"dateoptions\" onchange=\"if (this.value == 'custom') { document.getElementById('" . addslashes($key) . "').value = '" . addslashes($value) . "'; } else { document.getElementById('" . addslashes($key) . "').value = this.value; }\">$dateformat_options</select><br>
+		return "<select name=\"dateoptions\" id=\"dateoptions\" onchange=\"if (this.value == 'custom') { document.getElementById('" . $key . "').value = '" . $value . "'; } else { document.getElementById('" . $key . "').value = this.value; }\">$dateformat_options</select><br>
 		<input class=\"textbox\" type=\"text\" name=\"$key\" id=\"$key\" value=\"$value\" maxlength=\"30\" />";
 	}
 }
