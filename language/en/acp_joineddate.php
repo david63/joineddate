@@ -44,9 +44,6 @@ $lang = array_merge($lang, array(
 	'MEMBERLIST_FORMAT'				=> 'Joined date format for Memberlist',
 	'MEMBERLIST_FORMAT_EXPLAIN'		=> 'Set the date format for the “joined” date on Memberlist.<br>Leave blank to use the user default date format.',
 
-	'NEW_VERSION'					=> 'New Version',
-	'NEW_VERSION_EXPLAIN'			=> 'There is a newer version of this extension available.',
-
 	'PROFILE_FORMAT'				=> 'Joined date format for profile',
 	'PROFILE_FORMAT_EXPLAIN'		=> 'Set the date format for the “joined” date on a member’s profile.<br>Leave blank to use the user default date format.',
 
@@ -60,14 +57,4 @@ $lang = array_merge($lang, array(
 		'|F Y|'		=> 'Today / January 2008',
 		'|d F Y|'	=> 'Today / 1 January 2008',
 	)),
-));
-
-// Donate
-$lang = array_merge($lang, array(
-	'DONATE'					=> 'Donate',
-	'DONATE_EXTENSIONS'			=> 'Donate to my extensions',
-	'DONATE_EXTENSIONS_EXPLAIN'	=> 'This extension, as with all of my extensions, is totally free of charge. If you have benefited from using it then please consider making a donation by clicking the PayPal donation button opposite - I would appreciate it. I promise that there will be no spam nor requests for further donations, although they would always be welcome.',
-
-	'PAYPAL_BUTTON'				=> 'Donate with PayPal button',
-	'PAYPAL_TITLE'				=> 'PayPal - The safer, easier way to pay online!',
 ));
