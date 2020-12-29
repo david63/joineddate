@@ -22,3 +22,6 @@ services:
         class: david63\joineddate\core\functions
         arguments:
             - '@ext.manager'
+
+    _defaults:
+        public: true
